@@ -1,0 +1,82 @@
+// Usage: @include center() - centers vertically and horizontally
+//        @include center(vert) - centers vertically
+//        @include center(horiz) - centers horizontally
+@mixin center($which:both) { // vert or horiz
+position:absolute;
+@if $which == vert {
+top:50%;
+-webkit-transform: translateY(-50%);
+-moz-transform: translateY(-50%);
+-ms-transform: translateY(-50%);
+-o-transform: translateY(-50%);
+transform: translateY(-50%);
+}
+@else if $which == horiz {
+left:50%;
+-webkit-transform: translateX(-50%);
+-moz-transform: translateX(-50%);
+-ms-transform: translateX(-50%);
+-o-transform: translateX(-50%);
+transform: translateX(-50%);
+}
+@else{
+left:50%;
+top:50%;
+-webkit-transform: translateX(-50%) translateY(-50%);
+-moz-transform: translateX(-50%) translateY(-50%);
+-ms-transform: translateX(-50%) translateY(-50%);
+-o-transform: translateX(-50%) translateY(-50%);
+transform: translateX(-50%) translateY(-50%);
+}
+}
+
+
+@mixin glowTxt($glowTxtDefaultColor,$glowTxtHoverColor,$glowColor1 ,$glowColor2, $transitionTime) {
+$transitionTime: $transitionTime + ms;
+background-color: transparent;
+border-style: none;
+padding: 0;		/*width:100%;*/
+-moz-border-radius: 30px;
+-webkit-border-radius: 30px;
+border-radius: 30px;
+
+@if $glowTxtDefaultColor != inherit
+{
+color: $glowTxtDefaultColor;
+}
+
+text-decoration: none;
+text-shadow: none;
+-webkit-transition: $transitionTime linear 0s;
+-moz-transition: $transitionTime linear 0s;
+-o-transition: $transitionTime linear 0s;
+transition: $transitionTime linear 0s;
+outline: 0 none;
+
+&:hover
+{
+background-color: transparent;
+border-style: none;
+border-color: white;
+padding: 0;		/*width:50%;*/
+-moz-border-radius: 30px;
+-webkit-border-radius: 30px;
+border-radius: 30px;
+
+@if $glowTxtHoverColor != inherit
+{
+color: $glowTxtHoverColor;
+}
+
+text-shadow: -1px 1px 8px $glowColor1, 1px -1px 8px $glowColor2;
+}
+}
+
+@mixin borderRadiusMix($radiusSize) {
+$radiusSize: radiusSize + "px";
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+-ms-border-radius: 10px;
+border-radius: 10px;
+}
+

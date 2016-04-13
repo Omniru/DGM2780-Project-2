@@ -1,0 +1,23 @@
+	// Variables
+
+$headersColor: #00ff60;
+$headersShadowColor: black;
+$headersShadowColor2: #111;
+$homepageWidth: 920px;
+
+
+
+@font-face {
+    font-family: 'archisticonormal';
+    src: url('fonts/archistico_simple-webfont.eot');
+    src: url('fonts/archistico_simple-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/archistico_simple-webfont.woff2') format('woff2'),
+         url('fonts/archistico_simple-webfont.woff') format('woff'),
+         url('fonts/archistico_simple-webfont.ttf') format('truetype'),
+         url('fonts/archistico_simple-webfont.svg#archisticonormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    
+
+}
+$font-stack:    archisticonormal, Helvetica, sans-serif;

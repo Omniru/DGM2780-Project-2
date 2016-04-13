@@ -1,0 +1,39 @@
+// Header SCSS
+
+#header {
+clear: both; 
+line-height:55px;
+
+.leftAlign
+{
+@extend h1;
+float: left; font-size:55px; 
+}
+.rightAlign
+{
+float: right; vertical-align: middle;
+
+
+nav {
+
+float: right;
+
+li {
+float: left;
+list-style-type: none;
+font-weight: bold;
+
+color:black;
+
+/* @mixin glowTxt($glowTxtDefaultColor,$glowTxtHoverColor,$glowColor1 ,$glowColor2, $transitionTime) */
+@include glowTxt(inherit, #00ff60,  black, black, 500);
+
+}	
+li:before { content: "|"; padding-left:5px; padding-right:5px; }
+li:first-child:before { content: ""; }
+}
+
+}
+
+
+}// #header

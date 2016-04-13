@@ -1,0 +1,155 @@
+@font-face {
+  font-family: 'archisticonormal';
+  src: url("fonts/archistico_simple-webfont.eot");
+  src: url("fonts/archistico_simple-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/archistico_simple-webfont.woff2") format("woff2"), url("fonts/archistico_simple-webfont.woff") format("woff"), url("fonts/archistico_simple-webfont.ttf") format("truetype"), url("fonts/archistico_simple-webfont.svg#archisticonormal") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* line 3, ../scss/partials/_header.scss */
+#header {
+  clear: both;
+  line-height: 55px; }
+  /* line 7, ../scss/partials/_header.scss */
+  #header .leftAlign {
+    float: left;
+    font-size: 55px; }
+  /* line 12, ../scss/partials/_header.scss */
+  #header .rightAlign {
+    float: right;
+    vertical-align: middle; }
+    /* line 17, ../scss/partials/_header.scss */
+    #header .rightAlign nav {
+      float: right; }
+      /* line 21, ../scss/partials/_header.scss */
+      #header .rightAlign nav li {
+        float: left;
+        list-style-type: none;
+        font-weight: bold;
+        color: black;
+        /* @mixin glowTxt($glowTxtDefaultColor,$glowTxtHoverColor,$glowColor1 ,$glowColor2, $transitionTime) */
+        background-color: transparent;
+        border-style: none;
+        padding: 0;
+        /*width:100%;*/
+        -moz-border-radius: 30px;
+        -webkit-border-radius: 30px;
+        border-radius: 30px;
+        text-decoration: none;
+        text-shadow: none;
+        -webkit-transition: 500ms linear 0s;
+        -moz-transition: 500ms linear 0s;
+        -o-transition: 500ms linear 0s;
+        transition: 500ms linear 0s;
+        outline: 0 none; }
+        /* line 56, ../scss/partials/_mixins.scss */
+        #header .rightAlign nav li:hover {
+          background-color: transparent;
+          border-style: none;
+          border-color: white;
+          padding: 0;
+          /*width:50%;*/
+          -moz-border-radius: 30px;
+          -webkit-border-radius: 30px;
+          border-radius: 30px;
+          color: #00ff60;
+          text-shadow: -1px 1px 8px black, 1px -1px 8px black; }
+      /* line 32, ../scss/partials/_header.scss */
+      #header .rightAlign nav li:before {
+        content: "|";
+        padding-left: 5px;
+        padding-right: 5px; }
+      /* line 33, ../scss/partials/_header.scss */
+      #header .rightAlign nav li:first-child:before {
+        content: ""; }
+
+/* line 5, ../scss/partials/_footer.scss */
+#footer nav {
+  text-align: center; }
+  /* line 7, ../scss/partials/_footer.scss */
+  #footer nav li {
+    list-style-type: none;
+    font-weight: bold;
+    margin: 0;
+    display: inline;
+    color: black;
+    /* @mixin glowTxt($glowTxtDefaultColor,$glowTxtHoverColor,$glowColor1 ,$glowColor2, $transitionTime) */
+    background-color: transparent;
+    border-style: none;
+    padding: 0;
+    /*width:100%;*/
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    text-shadow: none;
+    -webkit-transition: 500ms linear 0s;
+    -moz-transition: 500ms linear 0s;
+    -o-transition: 500ms linear 0s;
+    transition: 500ms linear 0s;
+    outline: 0 none; }
+    /* line 56, ../scss/partials/_mixins.scss */
+    #footer nav li:hover {
+      background-color: transparent;
+      border-style: none;
+      border-color: white;
+      padding: 0;
+      /*width:50%;*/
+      -moz-border-radius: 30px;
+      -webkit-border-radius: 30px;
+      border-radius: 30px;
+      color: #00ff60;
+      text-shadow: -1px 1px 8px black, 1px -1px 8px black; }
+  /* line 19, ../scss/partials/_footer.scss */
+  #footer nav li:before {
+    content: "|";
+    padding-left: 5px;
+    padding-right: 5px; }
+  /* line 20, ../scss/partials/_footer.scss */
+  #footer nav li:first-child:before {
+    content: ""; }
+
+/* line 5, ../scss/pages/_home-page.scss */
+#home-page {
+  margin: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  width: 920px; }
+  /* line 18, ../scss/pages/_home-page.scss */
+  #home-page .pageWidth, #home-page .table-images, #home-page .table-content {
+    width: 100%;
+    max-width: 920px; }
+  /* line 24, ../scss/pages/_home-page.scss */
+  #home-page h1, #home-page #header .leftAlign, #header #home-page .leftAlign, #home-page h2, #home-page .banner {
+    font: 300% archisticonormal, Helvetica, sans-serif;
+    color: #00ff60;
+    text-shadow: 1px 1px 1px black, 1px 1px 2px #111; }
+  /* line 30, ../scss/pages/_home-page.scss */
+  #home-page h2 {
+    font: 200% archisticonormal, Helvetica, sans-serif; }
+  /* line 36, ../scss/pages/_home-page.scss */
+  #home-page .banner {
+    text-align: center;
+    font: 400% archisticonormal, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    width: 920px;
+    height: 240px;
+    background-image: url("../img/banner.jpg");
+    background-color: black;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 240px;
+    text-shadow: 1px 1px 1px black, -1px -1px 1px black; }
+  /* line 67, ../scss/pages/_home-page.scss */
+  #home-page .table-images img {
+    width: 200px;
+    height: 200px;
+    padding-left: 5px;
+    padding-right: 5px; }
+  /* line 81, ../scss/pages/_home-page.scss */
+  #home-page .table-content td {
+    width: 50%; }
